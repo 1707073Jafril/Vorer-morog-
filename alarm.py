@@ -32,19 +32,12 @@ AlarmClock.geometry("400x200")
 format_of_time = Label(AlarmClock,text="Please enter your time",bg="purple").place(x=100 , y=150)
 addTime = Label(AlarmClock,text = "Hour  Min   Sec",font=60).place(x = 110)
 setAlarm =Label(AlarmClock,text="Set Alarm Time!").place(x=0,y=30)
-
-# The Variables we require to set the alarm(initialization):
 hour = StringVar()
 min = StringVar()
 sec = StringVar()
-
-#Time required to set the alarm clock:
 hourTime= Entry(AlarmClock,textvariable = hour,bg = "pink",width = 15).place(x=110,y=30)
 minTime= Entry(AlarmClock,textvariable = min,bg = "pink",width = 15).place(x=150,y=30)
 secTime = Entry(AlarmClock,textvariable = sec,bg = "pink",width = 15).place(x=200,y=30)
-
-#To take the time input by user:
 submit = Button(AlarmClock,text = "Set Alarm",fg="red",width = 10,command =alarming).place(x =110,y=70)
 
 AlarmClock.mainloop()
-#Execution of the window.
